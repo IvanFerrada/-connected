@@ -1,6 +1,7 @@
 function ocultar(){
    document.getElementById('ocult').style.display = 'none';
    document.getElementById('ocult1').style.display = 'none';
+   document.getElementById('conectados').style.display = 'none';
   
 }
 ocultar();  
@@ -31,13 +32,15 @@ click();
 
 
 
+
 function mostrarFrom(){
    document.getElementById('remove').remove();
    document.getElementById('ocult1').style.display = 'block';
-   //document.getElementById('conectados').i
+   
+
    let elem = document.getElementById('ocult1');
    let pos = 0;
-   let id = setInterval(frame, 5)   ;
+   let id = setInterval(frame, 5);
 
    function frame(){
       if(pos == 200){
@@ -84,7 +87,16 @@ regiscliclick();
 
 
 
-
+// $('#click').click(function(){
+//    document.getElementById('conectados').style.display = 'block';
+//    $('#conect').animate({
+     
+//      right: '250px',
+//      opacity: '0.5',
+//      height: '250px',
+//      width: '250px'
+//    });
+//  }); 
 
 
 
